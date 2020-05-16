@@ -1,6 +1,6 @@
 #!/bin/bash
 # store code duplication found in each commit into $GIT_PROJECT_PATH.duplications/$COMMIT_ID.txt
-#compare
+#git project folder shall exist beside this file , alongside other tools files .
 # Author : Amr Mahrous
 #usage : change variables PROJECT_NAME, $GIT_PROJECT_PATH 
 # run ./command.sh , output will be text files with commits as file name 
@@ -22,7 +22,7 @@ runtime1=$((end-start))
 echo "get commits time $runtime1"
 
 stage=1
-#checkout to a commit , store duplicated code found in each commit
+#loop commits in the file , checkout to each commit , store duplicated code found in each commit
 sed 1d $COMMITS_FILE | while read COMMIT_ID
 do
 

@@ -2,7 +2,7 @@
 #this tool output commits id that has .h or .cpp file modified compared to its previous commit
 # Author : Amr Mahrous
 
-#usage : code_changed_commits.sh /folerpath > file_store_output.txt
+#usage : code_changed_commits.sh ./folerpath > file_store_output.txt
 
 folder=$1
 currPath=$PWD
